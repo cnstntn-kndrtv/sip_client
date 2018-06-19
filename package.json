@@ -58,7 +58,9 @@
     "repl": "beefy test/repl.js --open",
     "build": "grunt build",
     "prepublish": "cd src/Grammar && mkdir -p dist && pegjs --extra-options-file peg.json src/Grammar.pegjs dist/Grammar.js",
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "express": "^4.15.3",
@@ -71,7 +73,8 @@
     "speaker": "^0.4.0",
     "vs-stun": "0.0.7",
     "wav": "1.0.1",
-    "ws": "^1.0.1"
+    "ws": "^1.0.1",
+    "snyk": "^1.83.0"
   },
   "optionalDependencies": {
     "promiscuous": "^0.6.0"
@@ -112,5 +115,6 @@
     "tmp": "tmp/sip.js-0.7.6.tgz_1483722514443_0.31633586809039116"
   },
   "directories": {},
-  "_resolved": "https://registry.npmjs.org/sip.js/-/sip.js-0.7.6.tgz"
+  "_resolved": "https://registry.npmjs.org/sip.js/-/sip.js-0.7.6.tgz",
+  "snyk": true
 }
