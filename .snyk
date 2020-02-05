@@ -1,0 +1,33 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - node-webrtc > node-pre-gyp > hawk > hoek:
+        patched: '2020-02-05T00:07:24.523Z'
+    - node-webrtc > node-pre-gyp > hawk > boom > hoek:
+        patched: '2020-02-05T00:07:24.523Z'
+    - node-webrtc > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2020-02-05T00:07:24.523Z'
+    - node-webrtc > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-02-05T00:07:24.523Z'
+    - node-webrtc > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2020-02-05T00:07:24.523Z'
+    - node-webrtc > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-02-05T00:07:24.523Z'
+    - node-webrtc > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-02-05T00:07:24.523Z'
+    - node-webrtc > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-02-05T00:07:24.523Z'
+  'npm:lodash:20180130':
+    - sip_server > sails-disk > lodash:
+        patched: '2020-02-05T00:07:24.523Z'
+    - sip_server > waterline > lodash:
+        patched: '2020-02-05T00:07:24.523Z'
+    - sip_server > sails-disk > waterline-criteria > lodash:
+        patched: '2020-02-05T00:07:24.523Z'
+    - sip_server > sails-disk > waterline-cursor > lodash:
+        patched: '2020-02-05T00:07:24.523Z'
+    - sip_server > waterline > waterline-schema > lodash:
+        patched: '2020-02-05T00:07:24.523Z'
